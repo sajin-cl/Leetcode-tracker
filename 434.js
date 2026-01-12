@@ -6,7 +6,7 @@ Explanation: The five segments are ["Hello,", "my", "name", "is", "John"]
 Example 2:
 Input: s = "Hello"                            Output: 1 */
 
-var countSegments = function (s) {
+var countSegments = (s) => {
 
   if (s.trim() === '') return 0;
 
