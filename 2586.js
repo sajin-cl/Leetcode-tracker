@@ -16,9 +16,9 @@ var vowelStrings = function (words, left, right) {
     const word = words[i];
 
     const firstChar = word[0];
-    const lastChar = word[word.length-1];
+    const lastChar = word[word.length - 1];
 
-    if(vowels.includes(firstChar) && vowels.includes(lastChar)){
+    if (vowels.includes(firstChar) && vowels.includes(lastChar)) {
       vowelCount++;
     }
   };
