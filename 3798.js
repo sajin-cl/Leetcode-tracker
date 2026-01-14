@@ -16,7 +16,7 @@ Input: s = "221"
 
 Output: "22" */
 
-var largestEven = function (s) {
+var largestEven =  (s)=> {
 
   for (let i = s.length - 1; i >= 0; i--) {
     if (parseInt(s[i]) % 2 === 0) {
