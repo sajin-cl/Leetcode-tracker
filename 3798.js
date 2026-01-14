@@ -18,19 +18,16 @@ Output: "22" */
 
 var largestEven = function (s) {
 
-  let number = s.split('');
+  for (let i = s.length - 1; i >= 0; i--) {
+    if (parseInt(s[i]) % 2 === 0) {
+      return s.slice(0, i + 1)
+    }
+  };
 
-  for (let i = 0; i < s.length; i++) {
-    if (Number(number) % 2 == 0) {
-      return number;
-    }
-    else {
-      number.pop()
-    }
-  }
-  return number
+  return ''
 };
-
 
 console.log(largestEven(s = "1112"));
 console.log(largestEven(s = "221"));
+console.log(largestEven(s = "211"));
+console.log(largestEven(s = "111112212211122221")); 
