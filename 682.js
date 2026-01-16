@@ -21,7 +21,7 @@ var calPoints = (operations) => {
 
   for (let i = 0; i < operations.length; i++) {
     if (operations[i] !== 'C' && operations[i] !== 'D' && operations[i] !== '+') {
-      arr.push(Number(operations[i]))
+      arr.push(Number(operations[i]));
     }
     else if (operations[i] === 'C') {
       arr.pop();
@@ -29,14 +29,14 @@ var calPoints = (operations) => {
     else if (operations[i] === 'D') {
       arr.push(
         arr[arr.length - 1] * 2
-      )
+      );
     }
     else if (operations[i] === '+') {
       arr.push(
         arr[arr.length - 2] + arr[arr.length - 1]
-      )
+      );
     }
-  }
+  };
 
   return arr.reduce((total, val) => total + val, 0);
 
